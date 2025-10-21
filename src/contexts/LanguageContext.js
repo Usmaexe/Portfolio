@@ -72,6 +72,27 @@ export const translations = {
     
     oracleJavaCert: 'Oracle Certified Professional: Java SE 17 Developer',
     oracleCloudCert: 'Oracle Cloud Infrastructure 2025 Certified Foundations Associate',
+    
+    // Education
+    education: 'Education',
+    
+    inpt: 'National Institute of Posts and Telecommunications',
+    inptShort: 'INPT',
+    inptPeriod: 'Sep 2023 – Present',
+    inptDegree: 'Engineering Degree, Advanced Software Engineering for Digital Services',
+    inptLocation: 'Rabat, Morocco',
+    
+    est: 'Higher School of Technology',
+    estShort: 'EST',
+    estPeriod: 'Oct 2021 – Jul 2023',
+    estDegree: 'University Technical Diploma, Computer Application Development',
+    estLocation: 'Oujda, Morocco',
+    
+    fst: 'Faculty of Science and Technology',
+    fstShort: 'FST',
+    fstPeriod: 'Oct 2020 – Jul 2021',
+    fstDegree: 'First-Year DEUST in Mathematics, Computer Science, and Physics',
+    fstLocation: 'Al-Hoceima, Morocco',
   },
   fr: {
     // Header
@@ -140,6 +161,27 @@ export const translations = {
     
     oracleJavaCert: 'Oracle Certified Professional : Développeur Java SE 17',
     oracleCloudCert: 'Oracle Cloud Infrastructure 2025 Certified Foundations Associate',
+    
+    // Education
+    education: 'Éducation',
+    
+    inpt: 'Institut National des Postes et Télécommunications',
+    inptShort: 'INPT',
+    inptPeriod: 'Sep 2023 – Présent',
+    inptDegree: 'Diplôme d\'ingénieur, Ingénierie Logicielle Avancée pour Services Numériques',
+    inptLocation: 'Rabat, Maroc',
+    
+    est: 'École Supérieure de Technologie',
+    estShort: 'EST',
+    estPeriod: 'Oct 2021 – Juil 2023',
+    estDegree: 'Diplôme Universitaire Technique, Développement d\'Applications Informatiques',
+    estLocation: 'Oujda, Maroc',
+    
+    fst: 'Faculté des Sciences et Techniques',
+    fstShort: 'FST',
+    fstPeriod: 'Oct 2020 – Juil 2021',
+    fstDegree: '1ère Année DEUST en Mathématiques, Informatique et Physique',
+    fstLocation: 'Al-Hoceima, Maroc',
   }
 };
 
