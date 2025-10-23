@@ -4,16 +4,20 @@ import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Projects from '@/components/ProjectsNew';
 import Skills from '@/components/Skills';
+import StarfieldBackground from '@/components/StarfieldBackground';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0A192F]">
-      <Header />
-      <Hero />
-      <Education />
-      <Experience />
-      <Projects />
-      <Skills />
+    <main className="min-h-screen bg-[#0A192F] relative">
+      <StarfieldBackground />
+      <div className="relative z-10">
+        <Header />
+        <Hero />
+        <Education />
+        <Experience />
+        <Projects />
+        <Skills />
+      </div>
     </main>
   );
 }

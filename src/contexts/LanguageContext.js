@@ -22,7 +22,7 @@ export const translations = {
     
     // Experience
     myExperience: 'My',
-    experience: 'Experience',
+    experience: 'Experiences',
     
     // ExperienceNew
     softwareEngineerIntern: 'Software Engineer Intern',
@@ -120,8 +120,8 @@ export const translations = {
     downloadCV: 'TÉLÉCHARGER CV',
     
     // Experience
-    myExperience: 'Mon',
-    experience: 'Expérience',
+    myExperience: 'Mes',
+    experience: 'Expériences',
     
     // ExperienceNew
     softwareEngineerIntern: 'Stagiaire Ingénieur Logiciel',
@@ -131,14 +131,14 @@ export const translations = {
     oracleDesc1: 'Participé à l\'identification et à la résolution de bugs pour améliorer la stabilité du système.',
     oracleDesc2: 'Conçu et mis en œuvre une fonction de traçage et de surveillance pour un framework agentique dans le cadre de l\'équipe Oracle Labs.',
     
-  // Seomaniak
-  fullStackDevIntern: 'Stagiaire Développeur Full-Stack',
-  seomaniak: 'Seomaniak',
-  seomaniakCity: '[Ville]',
-  aprJun2023: 'Avr 2023 – Juin 2023',
-  seomaniakDesc1: 'Conçu un module de facturation ERP intégré, automatisant les flux de factures et réduisant le temps de traitement manuel.',
-  seomaniakDesc2: 'Développé un système de gestion de restaurant complet, couvrant la collecte des exigences, la conception d’architecture et le déploiement.',
-  seomaniakDesc3: 'Implémenté des solutions évolutives en utilisant l’architecture MVC de Laravel avec une intégration transparente des systèmes hérités.',
+    // Seomaniak
+    fullStackDevIntern: 'Stagiaire Développeur Full-Stack',
+    seomaniak: 'Seomaniak',
+    seomaniakCity: '[Ville]',
+    aprJun2023: 'Avr 2023 – Juin 2023',
+    seomaniakDesc1: 'Conçu un module de facturation ERP intégré, automatisant les flux de factures et réduisant le temps de traitement manuel.',
+    seomaniakDesc2: 'Développé un système de gestion de restaurant complet, couvrant la collecte des exigences, la conception d’architecture et le déploiement.',
+    seomaniakDesc3: 'Implémenté des solutions évolutives en utilisant l’architecture MVC de Laravel avec une intégration transparente des systèmes hérités.',
     
     fullStackDev: 'Développeur Full Stack',
     paycab: 'Paycab',
