@@ -45,6 +45,16 @@ export const translations = {
     healthDesc1: 'Designed and implemented an intuitive medical consultation interface, improving user experience by 60%.',
     healthDesc2: 'Developed an interactive medical record for patients and doctors using Next.js and Tailwind CSS.',
     
+    
+    // Seomaniak
+    fullStackDevIntern: 'Full-Stack Developer Intern',
+    seomaniak: 'Seomaniak',
+    seomaniakCity: 'Oujda',
+    aprJun2023: 'Apr 2023 – Jun 2023',
+    seomaniakDesc1: 'Engineered an integrated ERP billing module, automating invoice workflows and reducing manual processing time.',
+    seomaniakDesc2: 'Developed a full-featured restaurant management system, handling requirements gathering, architecture design, and deployment.',
+    seomaniakDesc3: 'Implemented scalable solutions using Laravel MVC architecture with seamless legacy system integration.',
+    
     // Projects
     featured: 'Featured',
     projects: 'Projects',
@@ -120,6 +130,15 @@ export const translations = {
     julOct2025: 'Juil 2025 – Oct 2025',
     oracleDesc1: 'Participé à l\'identification et à la résolution de bugs pour améliorer la stabilité du système.',
     oracleDesc2: 'Conçu et mis en œuvre une fonction de traçage et de surveillance pour un framework agentique dans le cadre de l\'équipe Oracle Labs.',
+    
+  // Seomaniak
+  fullStackDevIntern: 'Stagiaire Développeur Full-Stack',
+  seomaniak: 'Seomaniak',
+  seomaniakCity: '[Ville]',
+  aprJun2023: 'Avr 2023 – Juin 2023',
+  seomaniakDesc1: 'Conçu un module de facturation ERP intégré, automatisant les flux de factures et réduisant le temps de traitement manuel.',
+  seomaniakDesc2: 'Développé un système de gestion de restaurant complet, couvrant la collecte des exigences, la conception d’architecture et le déploiement.',
+  seomaniakDesc3: 'Implémenté des solutions évolutives en utilisant l’architecture MVC de Laravel avec une intégration transparente des systèmes hérités.',
     
     fullStackDev: 'Développeur Full Stack',
     paycab: 'Paycab',
