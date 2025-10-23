@@ -16,6 +16,20 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // Account for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -34,24 +48,30 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#professional"
-              className="text-[#64FFDA] text-sm font-medium hover:text-[#64FFDA]/80 transition-colors border-b-2 border-[#64FFDA] pb-1"
-            >
-              {t('professional')}
-            </a>
-            <a
-              href="#personal"
+            <button
+              onClick={() => scrollToSection('education')}
               className="text-[#CCD6F6] text-sm font-medium hover:text-[#64FFDA] transition-colors"
             >
-              {t('personal')}
-            </a>
-            <a
-              href="#contact"
+              {t('education')}
+            </button>
+            <button
+              onClick={() => scrollToSection('experience')}
               className="text-[#CCD6F6] text-sm font-medium hover:text-[#64FFDA] transition-colors"
             >
-              {t('contact')}
-            </a>
+              {t('experience')}
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="text-[#CCD6F6] text-sm font-medium hover:text-[#64FFDA] transition-colors"
+            >
+              {t('projects')}
+            </button>
+            <button
+              onClick={() => scrollToSection('skills')}
+              className="text-[#CCD6F6] text-sm font-medium hover:text-[#64FFDA] transition-colors"
+            >
+              {t('skills')}
+            </button>
           </nav>
 
           {/* Language Selector */}
