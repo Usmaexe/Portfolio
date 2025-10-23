@@ -398,16 +398,24 @@ export default function Skills() {
             {t('technical')} <span className="text-[#64FFDA]">{t('skills')}</span>
           </motion.h2>
           <motion.p
-            className="text-[#8892B0] text-center mb-16"
+            className="text-[#8892B0] text-center mb-16 hidden md:block"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.2 }}
           >
             Hover over the skills to interact
           </motion.p>
+          <motion.p
+            className="text-[#8892B0] text-center mb-8 md:hidden"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            Tap to explore skills
+          </motion.p>
 
-          {/* Interactive Draggable Skill Cloud */}
-          <div className="relative h-[700px] max-w-5xl mx-auto bg-gradient-to-br from-[#0A192F]/50 to-[#112240]/50 rounded-3xl border border-[#64FFDA]/20 overflow-hidden backdrop-blur-sm">
+          {/* Desktop: Interactive Draggable Skill Cloud */}
+          <div className="hidden md:block relative h-[700px] max-w-5xl mx-auto bg-gradient-to-br from-[#0A192F]/50 to-[#112240]/50 rounded-3xl border border-[#64FFDA]/20 overflow-hidden backdrop-blur-sm">
             {/* Animated background orbs */}
             <motion.div
               className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#64FFDA]/10 rounded-full blur-3xl"
@@ -458,6 +466,90 @@ export default function Skills() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
               </svg>
               Drag and drop the icons!
+            </motion.div>
+          </div>
+
+          {/* Mobile: Categorized Grid with Tap Interaction */}
+          <div className="md:hidden space-y-8">
+            {/* Languages Category */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ delay: 0.1 }}
+            >
+              <h3 className="text-[#64FFDA] font-mono text-sm mb-4 flex items-center gap-2">
+                <span className="text-xl">💻</span>
+                Languages
+              </h3>
+              <div className="grid grid-cols-4 gap-3">
+                {['Java', 'Python', 'JavaScript', 'TypeScript', 'C++', 'SQL', 'PHP'].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+                    transition={{ delay: 0.1 + idx * 0.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="bg-[#112240]/70 backdrop-blur-sm border border-[#64FFDA]/30 rounded-xl p-3 flex flex-col items-center justify-center gap-2 active:border-[#64FFDA] transition-colors"
+                  >
+                    <TechIcon name={skill} size={32} />
+                    <span className="text-[#8892B0] text-[10px] font-mono text-center">{skill}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Frameworks Category */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ delay: 0.3 }}
+            >
+              <h3 className="text-[#64FFDA] font-mono text-sm mb-4 flex items-center gap-2">
+                <span className="text-xl">⚡</span>
+                Frameworks
+              </h3>
+              <div className="grid grid-cols-4 gap-3">
+                {['React', 'Next.js', 'Spring Boot', 'Laravel'].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+                    transition={{ delay: 0.3 + idx * 0.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="bg-[#112240]/70 backdrop-blur-sm border border-[#64FFDA]/30 rounded-xl p-3 flex flex-col items-center justify-center gap-2 active:border-[#64FFDA] transition-colors"
+                  >
+                    <TechIcon name={skill} size={36} />
+                    <span className="text-[#8892B0] text-[10px] font-mono text-center">{skill}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Tools Category */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ delay: 0.5 }}
+            >
+              <h3 className="text-[#64FFDA] font-mono text-sm mb-4 flex items-center gap-2">
+                <span className="text-xl">🛠️</span>
+                Tools & Technologies
+              </h3>
+              <div className="grid grid-cols-4 gap-3">
+                {['Docker', 'Kubernetes', 'Git', 'Figma'].map((skill, idx) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+                    transition={{ delay: 0.5 + idx * 0.05 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="bg-[#112240]/70 backdrop-blur-sm border border-[#64FFDA]/30 rounded-xl p-3 flex flex-col items-center justify-center gap-2 active:border-[#64FFDA] transition-colors"
+                  >
+                    <TechIcon name={skill} size={32} />
+                    <span className="text-[#8892B0] text-[10px] font-mono text-center">{skill}</span>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </motion.div>
