@@ -1,6 +1,7 @@
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import GridBackground from "@/components/GridBackground";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -23,12 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${manrope.variable} ${spaceGrotesk.variable} antialiased relative`}
         style={{ fontFamily: 'var(--font-manrope)' }}
       >
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+        <GridBackground />
+        <div className="relative z-10">
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </div>
       </body>
     </html>
   );
