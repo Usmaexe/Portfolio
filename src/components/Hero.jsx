@@ -63,7 +63,12 @@ export default function Hero() {
 
             {/* Download CV Button */}
             <div className="flex items-center gap-6">
-              <button className="flex items-center gap-2 border-2 border-[#64FFDA] text-[#64FFDA] px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#64FFDA] hover:text-[#0A192F] transition-all">
+              <a
+                href="/ANOU_Oussama.pdf"
+                download="ANOU_Oussama.pdf"
+                aria-label={t('downloadCV')}
+                className="flex items-center gap-2 border-2 border-[#64FFDA] text-[#64FFDA] px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#64FFDA] hover:text-[#0A192F] transition-all"
+              >
                 <span>{t('downloadCV')}</span>
                 <svg
                   className="w-4 h-4"
@@ -78,7 +83,7 @@ export default function Hero() {
                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                   />
                 </svg>
-              </button>
+              </a>
 
               {/* Social Links */}
               <div className="flex items-center gap-4">
