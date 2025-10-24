@@ -74,6 +74,7 @@ export const translations = {
     
     // Skills
     technical: 'Technical',
+    subtitle: 'Hover over to see the skill',
     skills: 'Skills',
     languages: 'Languages',
     frameworks: 'Frameworks',
@@ -172,6 +173,7 @@ export const translations = {
     
     // Skills
     technical: 'Compétences',
+    subtitle: 'passer la souris au-dessus de l\'icon',
     skills: 'Techniques',
     languages: 'Langages',
     frameworks: 'Frameworks',
