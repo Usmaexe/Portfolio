@@ -16,8 +16,13 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Oussama Anou - Portfolio",
+  title: "anou.",
   description: "Software Engineer | Full-Stack Developer | Rabat, Morocco",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
