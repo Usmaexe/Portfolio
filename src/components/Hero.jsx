@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   const getSlides = () => [
     { text: t('problemSolver'), duration: 1000 },
@@ -64,8 +64,8 @@ export default function Hero() {
             {/* Download CV Button */}
             <div className="flex items-center gap-6">
               <a
-                href="/ANOU_Oussama.pdf"
-                download="ANOU_Oussama.pdf"
+                href={language === 'en' ? '/ANOU_Oussama_EN.pdf' : '/ANOU_Oussama_FR.pdf'}
+                download={language === 'en' ? 'ANOU_Oussama_EN.pdf' : 'ANOU_Oussama_FR.pdf'}
                 aria-label={t('downloadCV')}
                 className="flex items-center gap-2 border-2 border-[#64FFDA] text-[#64FFDA] px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#64FFDA] hover:text-[#0A192F] transition-all"
               >
