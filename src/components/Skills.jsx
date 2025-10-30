@@ -231,17 +231,6 @@ function ProficiencyBar({ skill, proficiency, index }) {
           animate={isInView ? { width: `${proficiency}%` } : { width: 0 }}
           transition={{ delay: index * 0.1 + 0.2, duration: 1, ease: "easeOut" }}
         >
-          <motion.div
-            className="absolute inset-0 bg-white/30"
-            animate={{
-              x: ['-100%', '100%'],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-          />
         </motion.div>
       </div>
     </motion.div>
