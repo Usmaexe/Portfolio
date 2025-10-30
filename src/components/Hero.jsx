@@ -40,8 +40,7 @@ export default function Hero() {
               <div className="relative inline-block">
                 {/* Cyan background rectangle */}
                 <div className="absolute inset-0 bg-[#64FFDA]/20 rounded-md -z-10 blur-sm"></div>
-                <p 
-                  className={`text-[#64FFDA] text-sm uppercase tracking-wider font-mono px-4 py-2 transition-all duration-500 ${
+                <p  className={`text-[#64FFDA] text-sm uppercase tracking-wider font-mono px-4 py-2 transition-all duration-500 ${
                     isTransitioning ? 'blur-sm opacity-0' : 'blur-0 opacity-100'
                   }`}
                 >
